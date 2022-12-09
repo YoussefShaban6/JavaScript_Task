@@ -111,10 +111,10 @@ const fetchErrors = async (username, email, password, confirmation) => {
     // console.log(userErrors.length)
   }
 
-  const regex = /^[a-z0-9_\.]+$/;
+  const regex = /(^[^0-9])+\w[^_-]*([a-z]+$)/;
   if (!regex.test(username.trim())) {
     userErrors.push(
-      "The username should be only letters and numbers and not start with a number."
+      "The username must be only alphanumric and not start or end with a number."
     );
     console.log(userErrors);
   }

@@ -63,6 +63,11 @@ body {
   border: none;
   padding: 0px 50px;
   cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(5px);
 }
 
 .hide {
