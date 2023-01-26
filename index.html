@@ -10,7 +10,59 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="welcome box center">
+        <img src="./imgs/welcome.png" alt="" />
+        <div class="box__content">
+          <h1>Welcome</h1>
+          <p>
+            We’re glad you’re here! Enjoy this free prototype made with Anima.
+          </p>
+          <button class="btn get__started">Get Started</button>
+        </div>
+      </div>
+      
+      <div class="signup box center hide">
+        <img src="./imgs/signup.png" alt="" />
+        <div class="box__content">
+          <h1>Create Account</h1>
+          <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+          <div class="form">
+            <div class="username">
+              <input
+                type="text"
+                min="5"
+                max="15"
+                placeholder="Username"
+                class="user"
+              />
+            </div>
+            <div class="email">
+              <input type="email" placeholder="E-mail" class="mail" />
+            </div>
+            <div class="password">
+              <input type="password" placeholder="Password" class="pass" />
+            </div>
+            <div>
+              <input
+                type="password"
+                placeholder="Confirm password"
+                class="pass"
+              />
+            </div>
+            <button class="btn register__btn">Create Account</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="successful__signup box center hide">
+        <img src="./imgs/successfullSginup.png" alt="" />
+        <div class="box__content">
+          <h1>Successfully Logged In</h1>
+          <a></a>
+        </div>
+      </div>
+    </div>
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./script/script.js"></script>

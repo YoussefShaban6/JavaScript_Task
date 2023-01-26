@@ -165,6 +165,25 @@ input.pass {
 }
 
 /* ================= Media ================== */
+@media (max-width: 75em) {
+  .box {
+    width: 80%;
+  }
+
+ .welcome img,
+  .signup img,
+  .successful__signup img {
+    width: 315px;
+    height: 315px;
+  }
+
+}
+
+@media (max-width: 59em) {
+  .box {
+    width: 95%;
+  }
+}
 
 @media (max-width: 45em) {
 
