@@ -11,12 +11,11 @@ html {
 }
 
 body {
-  /* height: 100vh; */
   font-family: "Mulish", sans-serif;
   line-height: 1;
   font-weight: 400;
   background: url("../imgs/background.png") no-repeat center;
-  background-size: 100%;
+  background-size: 100% 100%;
 }
 
 .center {
@@ -166,49 +165,22 @@ input.pass {
 
 /* ================= Media ================== */
 @media (max-width: 75em) {
-  .box {
-    width: 80%;
-  }
-
- .welcome img,
-  .signup img,
-  .successful__signup img {
-    width: 315px;
-    height: 315px;
-  }
-
-}
-
-@media (max-width: 59em) {
-  .box {
-    width: 95%;
-  }
-}
-
-@media (max-width: 45em) {
-
-  .center {
-    margin: 0;
-  }
-
-  .successful__signup.box {
-    height: 100vh
+  body {
+    padding: 50px 0;
   }
 
   .box {
-    width: 100%;
-    background: url("../imgs/background.png") no-repeat center;
-    background-size: 100% 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 40px 0;
+    height: 100%;
+    padding: 60px 0;
+    width: 70%;
+    margin: 0 auto;
   }
 
   .box__content {
-    padding: 0;
-    width: 315px;
+    width: 80%;
     text-align: center;
   }
 
@@ -220,6 +192,20 @@ input.pass {
   .box__content p {
     font-size: 16px;
     line-height: 26px;
+  }
+
+  .welcome img,
+  .signup img,
+  .successful__signup img {
+    width: 415px;
+    height: 415px;
+  }
+}
+
+@media (max-width: 45em) {
+  .box {
+    background: none;
+    width: 100%;
   }
 
   .welcome img,
